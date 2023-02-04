@@ -1,0 +1,163 @@
+/* .ZPnavigation{
+ 
+  background-color: #1B1A47;;
+}
+
+.ZPnavigation {
+  position: absolute;
+  left: 0px;
+  top: 45px;
+  bottom: 0px;
+  z-index: 103;
+  height: auto;
+  width: 70px;
+}
+lyte-arrow{
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+} 
+.ZPnavlists li {
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  background-color: #1B1A47;
+}
+ul {
+  list-style: none;
+}
+.ZPmtxt {
+  display: block;
+  font-size: 11px;
+  overflow: hidden;
+  width: 70px;
+  line-height: 12px;
+  text-align: center;
+  margin-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  max-height: 24px;
+}
+.ZPMic {
+  height: 20px;
+}
+.ZPnavlists li.open .dropdown-menu {
+  left: 100%;
+  top: auto;
+  bottom: 0;
+  width: 180px;
+  padding: 3px;
+  margin: 0;
+  border-radius: 3px;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.07);
+}
+
+.ZPnavlists li.open .dropdown-menu ul {
+  margin: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ZPnavlists li.open .dropdown-menu li {
+  border-left: 0;
+  display: block;
+  cursor: pointer;
+  height: inherit;
+}
+
+.ZPnavlists li.open .dropdown-menu li div {
+  word-break: break-all;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  color: #000 !important;
+  border-radius: 3px;
+  border: transparent;
+  margin: 2px;
+  padding: 8px 5px;
+  text-align: left;
+}
+
+.ZPnavlists li.open .dropdown-menu li div:hover {
+  background-color: #eee !important;
+}
+
+.ZPnavlists li.open .dropdown-menu li div .ZPMic {
+  float: left;
+}
+
+.ZPnavlists li.open .dropdown-menu li div span {
+  font-size: 13px;
+  padding-left: 8px;
+  padding-right: 5px;
+  white-space: nowrap;
+  width: 140px;
+  line-height: 13px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.ZPnavlists li.open .dropdown-menu li em {
+  margin-top: -10px;
+  right: 10px;
+}
+
+.ZPMic {
+    height: 20px;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+.ZPnavlists li {
+  border-left: 3px solid transparent;
+  cursor: pointer;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}.ZPMic .path2 {
+  margin-left: -18px;
+ 
+}
+.IC-More-01:before {
+  content: "\f2be";
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+img {
+  vertical-align: middle;
+  border: 0;
+}
+.ZPnavlists li {
+  color: #B5BFC7;
+}
