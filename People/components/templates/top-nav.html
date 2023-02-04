@@ -1,0 +1,68 @@
+<template tag-name="top-nav">
+ 
+
+          <lyte-nav  lt-prop-user-value="name" lt-prop-system-value="value" class="zp_Nav">
+           <div class="ZPHeadLft">
+                <a id="logoPeople" class="ZPLogo DB"></a>
+               
+           </div>
+           
+            <!-- <lyte-nav-item selected="true" class="ZPTbox ZPSrboxl ZPSpanel"> -->
+               
+                <!-- <div class="ZPTbox ZPSrbox" id="searchdiv"> -->
+                        <!-- <input type="search" class="ZPselect" id="zpeople_search_box"
+                            placeholder="Search Employee" value="" name="Search"> -->
+                            <lyte-input style="display: flex;" lt-prop-direction = 'vertical' class='ZPselect ZPTbox ZPSrboxl ZPSpanel' lt-prop-type = 'search'  lt-prop-max = 1000 lt-prop-min = 0 lt-prop-step = 5 lt-prop-placeholder="Search Employee"> </lyte-input>
+                            
+                            <!-- </div> -->
+                            
+            <!-- </lyte-nav-item> -->
+           <div class="inwrapico">
+            <lyte-nav-item class="nav top-nav ZPaddPopOver">
+                <li><a class="u-link" id="subscriptionLink" target="_blank"
+                    >Subscription</a>
+                 </li>
+            </lyte-nav-item>
+            <lyte-nav-item class="nav top-nav ZPaddPopOver">
+                <li>
+              <a data-placement="bottom"
+                    title="Settings"><span><i class="IC-setting-l"></i></span></a></li>
+            </lyte-nav-item>
+          <lyte-nav-item class="nav top-nav ZPaddPopOver">
+            <li id="zpadv_icon"><a class="ZPtitle"
+                data-placement="bottom" title="Refer and Earn"> <span>
+                        <i class="CR-refer-frnd"></i>
+                </span>
+            </a></li>
+          </lyte-nav-item>
+
+          <lyte-nav-item class="nav top-nav ZPaddPopOver">
+            <li id="zp_quickadd_form_outer"><a data-toggle="dropdown">
+                <span data-toggle="tooltip" data-placement="bottom"
+                title="Quick Add"> <i class="IC-add-r"></i>
+            </span>
+        </a></li>
+          </lyte-nav-item>
+          <lyte-nav-item class="nav top-nav ZPaddPopOver">
+            <li id="zp_askus"><a class="ZPtitle" title=""
+                data-placement="bottom" href="#hrcase/home" data-toggle="tooltip"
+                data-original-title="Ask a question"><span><i
+                        class="IC-hrc"></i></span></a></li>
+          </lyte-nav-item>
+        
+          <lyte-nav-item class="nav top-nav ZPaddPopOver">
+            <li class="dropdown MR8" id="zp_feeds_notifications"><a
+                class="dropdown-toggle" id="zp_ntfn_dropdown" data-toggle="modal">
+                    <span data-toggle="tooltip" data-placement="bottom"
+                    title="Notifications" class="IC-bell-l S20"><sup
+                        class="ZPncount DNI" id="zp_feeds_ntfn_count"></sup></span>
+            </a></li>
+        
+        </lyte-nav-item>
+        <lyte-nav-item class="nav top-nav ZPaddPopOver ZPPimg dropdown">
+            <img data-toggle="dropdown" id="zpeople_userimage" src="addons/@zoho/lyte-ui-component/dist/css/layout/user-thumbnail.png">
+        </lyte-nav-item>
+    </div>
+   
+    </lyte-nav>
+</template>

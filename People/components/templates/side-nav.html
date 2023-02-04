@@ -1,0 +1,40 @@
+
+   <template tag-name="side-nav" >
+    <div class="ZPnavigation">
+      
+        <p> {{nav}} </p>
+        <ul class="ZPnavlists" id="znavSide">
+        <% navItems.forEach(function(record,i){  %>
+                <%if(record.name=='services'){%>
+                  
+                  <li id='zp_maintab_{{record.name}}' value="{{record.seq}}" class="ZPMic ZPic navElm" onclick="{{action('hashChaning',record.url)}}"> 
+                  <img class ="ZPMic" src="addons/@zoho/lyte-ui-component/dist/css/layout/app.svg">
+                    <span class="ZPmtxt">{{record.disName}}</span>
+                </li>
+             
+                <%} else{%>
+                 
+                 <li id='zp_maintab_{{record.name}}' value="{{record.seq}}" onclick="{{action('hashChaning',record.url)}}" name="false"> 
+                <div>
+            <i class="ZPMic ZPic-{{record.classi}}">
+            <i class="IC-{{record.classi}}-01 path1"></i>
+            <i class="IC-{{record.classi}}-02 path2"></i>
+          </i>
+            <span class="ZPmtxt">{{record.disName}}</span>
+         </div>
+        </li> 
+      
+        <%}});%>
+       <li class="zp_more " id="more" onclick="{{action('more',this)}}">
+        <i class="ZPMic ZPic-More">
+          <i class="IC-More-01 path1"></i>
+          <i class="IC-More-02 path2"></i>
+        </i>
+        <span class="ZPmtxt">more</span> 
+        <dropdown-homemenu></dropdown-homemenu>
+      </li>
+        </ul>
+        <side-subtap></side-subtap>    
+</div>
+
+</template>

@@ -1,0 +1,17 @@
+<template tag-name="dropdown-homemenu">
+   <div class="dropdown-menu zp-cusmtab" id="zp_tabmore">
+    <ul  onclick="elementChange(this,this.id)" id="dropUl">
+    <% navItems.forEach(function(record,i){ %>
+            <li class="listnav"  value="{{record.seq}}" id='zp_maintab_{{record.name}}' onclick="{{action('hashChaning',record.url)}}" name="true">
+                <div class="dropinnerdiv">
+                    <i class="ZPMic ZPic-{{record.classi}}">
+                        <i class="IC-{{record.classi}}-01 path1"></i>
+                        <i class="IC-{{record.classi}}-02 path2"></i>
+                    </i>
+                    <span class="ZPmtxt">{{record.disName}}</span>
+                </div>  
+             </li>
+        <%}); %>
+    </ul>
+   </div>
+</template>
