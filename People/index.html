@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=11;IE12;IE=edge" />
+	<title>Demo</title>
+	<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+	<script src="node_modules/@zoho/lyte/custom-elements-es5-adapter.js"></script>
+ 	<script src="node_modules/@zoho/lyte/polyfill-bundle.js"></script>
+ 	<script src="node_modules/@zoho/lyte/lyte-es5.min.js"></script>
+	<script src="app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="addons/@zoho/lyte-ui-component/dist/css/layout/zp_css_2.css" />
+	<link type="text/css" rel="stylesheet" href="https://localcss.zohostatic.com/people/25JAN2023_R_1254/people3/css/zpfont.css">
+	<script type="text/javascript" src="node_modules/@zoho/lyte-dom/lyte-dom.min.js"></script>
+	<script type="text/javascript" src="addons/@zoho/lyte-ui-component/dist/I18n/en_US.js"></script>
+	<script type="text/javascript" src="addons/@zoho/lyte-ui-component/dist/components/helpers/helpers.js"></script>
+	<script type="text/javascript" src="addons/@zoho/lyte-ui-component/dist/components/lyte-ui-components.js"></script>
+	<script type="text/javascript" src="addons/@zoho/lyte-ui-component/dist/components/lyte-menu.js"></script>
+	<script type="text/javascript" src="addons/@zoho/lyte-ui-component/dist/components/lyte-nav.js"></script>
+	<script type="text/javascript" src="addons/@zoho/lyte-ui-component/dist/components/lyte-svg.js"> </script>
+	<link rel="stylesheet" href="addons/@zoho/lyte-ui-component/dist/theme/compiledCSS/default/ltr/lyte-ui-components.css" />
+	<link rel="stylesheet" href="addons/@zoho/lyte-ui-component/dist/theme/compiledCSS/default/ltr/lyte-ui-menu.css" />
+	<link rel="stylesheet" href="addons/@zoho/lyte-ui-component/dist/theme/compiledCSS/default/ltr/lyte-ui-nav.css" />
+</head>
+<body>
+	
+	<page-wrapper></page-wrapper>
+	<div id="hollpage"></div>
+
+	<script>
+
+
+$L( window ).on( 'hashchange', function( e ) {
+ 	var path=window.location.hash;
+			var hash=path.split('#');
+			var homeMenuPath=hash[1].split('/');
+			$L('li.active').removeClass('active');
+			if(`#zp_maintab_${homeMenuPath[0]}`)
+			$L(`#zp_maintab_${homeMenuPath[0]}`).addClass('active');
+   var obj=store.modelFor( "people_data" ).fieldList.subTabs.default;
+	var divEl=$L('#zp_main_subtabs');
+$L('#subNavList').empty();
+var path=window.location.hash;
+			var hash=path.split('#');
+			var homeMenuPath=hash[1].split('/');
+	var array;
+	var value=$L('#zp_maintab_'+homeMenuPath[0]).val();
+	if(value==1){
+     
+       array=obj.services;
+	}
+	else if(value==2){
+		array=obj.home;
+	}
+	else if(value==3){
+		array=obj.selfservice;
+	}
+	else if(value==4){
+		array=obj.leavetracker;
+	}
+	else if(value==5){
+		array=obj.timetracker;
+	}
+	else if(value==6){
+		array=obj.attendance;
+	}
+	else if(value==7){
+		array=obj.organization;
+	}
+	else if(value==8){
+		array=obj.performance;
+	}
+	else if(value==9){
+		array=obj.files;
+	}else if(value==10){
+		array=obj.tasks;
+	}
+	else if(value==11){
+		array=obj.cases;
+	}
+	else if(value==12){
+		array=obj.employeengagement;
+	}
+	else if(value==13){
+		array=obj.hrlettes;
+	}
+	else if(value==14){
+		array=obj.onboarding;
+	}
+	else if(value==15){
+		array=obj.approvals;
+	}
+	document.getElementById('pageContent').innerHTML=homeMenuPath[0].toUpperCase();
+	for(let i=0; i<array.length; i++){
+		var subLi=document.createElement('li');
+		var anchor=document.createElement('a');
+		anchor.innerHTML=array[i];
+		anchor.classList.add('subNavLi');
+		document.getElementById('subNavList').appendChild(subLi);
+        subLi.appendChild(anchor);
+	}
+} );
+console.log(this);
+	</script>
+</body>
+</html>
